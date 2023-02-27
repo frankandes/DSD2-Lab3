@@ -1,6 +1,6 @@
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f8b30c53541548c09abe0df61570a4a2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot InstructionFetchTB_behav xil_defaultlib.InstructionFetchTB -log elaborate.log 
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vitis/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot InstructionDecodeTB_behav xil_defaultlib.InstructionDecodeTB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,9 +11,8 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.InstructionMem [instructionmem_default]
-Compiling architecture behavioral of entity xil_defaultlib.InstructionFetch [instructionfetch_default]
-Compiling architecture behavioral of entity xil_defaultlib.instructionfetchtb
-Built simulation snapshot InstructionFetchTB_behav
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionDecode [instructiondecode_default]
+Compiling architecture testbench of entity xil_defaultlib.instructiondecodetb
+Built simulation snapshot InstructionDecodeTB_behav

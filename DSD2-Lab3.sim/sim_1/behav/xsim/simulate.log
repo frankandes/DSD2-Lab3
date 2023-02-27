@@ -1,5 +1,14 @@
-Vivado Simulator 2019.1
 Time resolution is 1 ps
+Error: RD1 Failed
+Time: 405 ns  Iteration: 0  Process: /InstructionDecodeTB/stim_proc  File: E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd
+Error: RD2 Failed
+Time: 405 ns  Iteration: 0  Process: /InstructionDecodeTB/stim_proc  File: E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd
+Error: RtDest Failed
+Time: 405 ns  Iteration: 0  Process: /InstructionDecodeTB/stim_proc  File: E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd
+Error: RdDest Failed
+Time: 405 ns  Iteration: 0  Process: /InstructionDecodeTB/stim_proc  File: E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd
+Error: ImmOut Failed
+Time: 405 ns  Iteration: 0  Process: /InstructionDecodeTB/stim_proc  File: E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd
 Failure: Testbench Concluded
-Time: 900 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Frank Andes/Documents/VScode_VHDL/Lab2InstrFetchDecode/Lab2InstrFetchDecode.srcs/sim_1/imports/Downloads/InstructionFetchTB.vhd
-$finish called at time : 900 ns : File "C:/Users/Frank Andes/Documents/VScode_VHDL/Lab2InstrFetchDecode/Lab2InstrFetchDecode.srcs/sim_1/imports/Downloads/InstructionFetchTB.vhd" Line 80
+Time: 500 ns  Iteration: 1  Process: /InstructionDecodeTB/stim_proc  File: E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd
+$finish called at time : 500 ns : File "E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd" Line 236

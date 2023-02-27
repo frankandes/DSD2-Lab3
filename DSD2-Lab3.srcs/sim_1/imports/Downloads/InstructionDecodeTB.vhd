@@ -40,7 +40,7 @@ end record;
 
 type test_array is array (natural range <>) of test_vector;
 constant test_vector_array : test_array := (
---NOOP
+-- NOOP
 	(Instruction => x"00000000",
 	RegWriteAddr => "00000",
 	RegWriteData => x"00000000",
@@ -56,8 +56,8 @@ constant test_vector_array : test_array := (
 	RtDest => "00000",
 	RdDest => "00000",
 	ImmOut => x"00000000"),
---ADD R1, R1, R2 - 00000000001000010001000000100000
-	(Instruction => x"00211020",
+-- ADD R1, R2, R1 - 00000000001000010001000000100000
+	(Instruction => x"00220820",
 	RegWriteAddr => "00001",
 	RegWriteData => x"12121212",
 	RegWriteEn => '1',
@@ -69,10 +69,10 @@ constant test_vector_array : test_array := (
 	RegDst => '1',
 	RD1 => x"12121212",
 	RD2 => x"00000000",
-	RtDest => "00001",
-	RdDest => "00010",
-	ImmOut => x"00001020"),
---ADDI R1, R1, 13 - 00100000001000010000000000001101
+	RtDest => "00010",
+	RdDest => "00001",
+	ImmOut => x"00000820"),
+-- ADDI R1, R1, 13 - 00100000001000010000000000001101
 	(Instruction => x"2021000d",
 	RegWriteAddr => "00010",
 	RegWriteData => x"00000001",
@@ -88,8 +88,6 @@ constant test_vector_array : test_array := (
 	RtDest => "00001",
 	RdDest => "00000",
 	ImmOut => x"0000000d")
-
-	-- Add more test vectors here
 );
 
 component InstructionDecode is
@@ -191,7 +189,28 @@ begin
 		RegWriteEn <= test_vector_array(i).RegWriteEn;
 		wait until clk='0';
     	wait for 5 ns;
---TODO:	assert statements
+		assert RegWrite = test_vector_array(i).RegWrite
+			report "RegWrite Failed";
+		assert MemtoReg = test_vector_array(i).MemtoReg
+			report "MemtoReg Failed";
+		assert MemWrite = test_vector_array(i).MemWrite
+			report "MemWrite Failed";
+		assert ALUControl = test_vector_array(i).ALUControl
+			report "ALUControl Failed";
+		assert ALUSrc = test_vector_array(i).ALUSrc
+			report "ALUSrc Failed";
+		assert RegDst = test_vector_array(i).RegDst
+			report "RegDst Failed";
+		assert RD1 = test_vector_array(i).RD1
+			report "RD1 Failed";
+		assert RD2 = test_vector_array(i).RD2
+			report "RD2 Failed";
+		assert RtDest = test_vector_array(i).RtDest
+			report "RtDest Failed";
+		assert RdDest = test_vector_array(i).RdDest
+			report "RdDest Failed";
+		assert ImmOut = test_vector_array(i).ImmOut
+			report "ImmOut Failed";
 	end loop;
 	wait until clk='0';
 
