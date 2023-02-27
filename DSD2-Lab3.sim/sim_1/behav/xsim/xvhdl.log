@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Frank Andes/Documents/VScode_VHDL/Lab2InstrFetchDecode/Lab2InstrFetchDecode.srcs/sources_1/new/InstructionMem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionMem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Frank Andes/Documents/VScode_VHDL/Lab2InstrFetchDecode/Lab2InstrFetchDecode.srcs/sources_1/new/InstructionFetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionFetch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Frank Andes/Documents/VScode_VHDL/Lab2InstrFetchDecode/Lab2InstrFetchDecode.srcs/sim_1/imports/Downloads/InstructionFetchTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionFetchTB'
