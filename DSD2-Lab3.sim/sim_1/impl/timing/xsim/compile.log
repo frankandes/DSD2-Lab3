@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.sim/sim_1/impl/timing/xsim/InstructionDecodeTB_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32M_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32M_HD25
+INFO: [VRFC 10-311] analyzing module RAM32M_HD26
+INFO: [VRFC 10-311] analyzing module RAM32M_HD27
+INFO: [VRFC 10-311] analyzing module RAM32M_HD29
+INFO: [VRFC 10-311] analyzing module RAM32M_HD30
+INFO: [VRFC 10-311] analyzing module RAM32M_HD31
+INFO: [VRFC 10-311] analyzing module RAM32M_HD32
+INFO: [VRFC 10-311] analyzing module RAM32M_HD33
+INFO: [VRFC 10-311] analyzing module RAM32M_HD36
+INFO: [VRFC 10-311] analyzing module RAM32X1D_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32X1D_HD28
+INFO: [VRFC 10-311] analyzing module RAM32X1D_HD34
+INFO: [VRFC 10-311] analyzing module RAM32X1D_HD35
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionDecodeTB'

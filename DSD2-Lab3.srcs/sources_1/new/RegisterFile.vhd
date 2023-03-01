@@ -43,7 +43,7 @@ begin
                 reg_file(to_integer(unsigned(addr3))) <= wd;
             end if;
         end if;
+        rd1 <= reg_file(to_integer(unsigned(addr1)));
+        rd2 <= reg_file(to_integer(unsigned(addr2)));
     end process;
-    rd1 <= reg_file(to_integer(unsigned(addr1)));
-    rd2 <= reg_file(to_integer(unsigned(addr2)));
 end Behavioral;

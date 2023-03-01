@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.runs/synth_1/InstructionDecode.tcl"
+  variable script "C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.runs/synth_1/InstructionDecode.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,28 +70,25 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/sfand/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7840-DESKTOP-OK3HDTO/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k70tfbv676-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.cache/wt [current_project]
-set_property parent.project_path E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo e:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sources_1/new/ControlUnit.vhd
+read_vhdl -library xil_defaultlib {{C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.srcs/sources_1/new/ControlUnit.vhd}}
 read_vhdl -vhdl2008 -library xil_defaultlib {
-  E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sources_1/new/RegisterFile.vhd
-  E:/SchoolWork/VivadoProjects/DSD2-Lab3/DSD2-Lab3.srcs/sources_1/new/InstructionDecode.vhd
+  {C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.srcs/sources_1/new/RegisterFile.vhd}
+  {C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.srcs/sources_1/new/InstructionDecode.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

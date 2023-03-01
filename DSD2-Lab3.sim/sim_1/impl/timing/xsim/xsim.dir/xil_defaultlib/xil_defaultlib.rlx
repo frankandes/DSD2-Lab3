@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.sim/sim_1/impl/timing/xsim/InstructionDecodeTB_time_impl.v,1677700465,verilog,,,,InstructionDecode;RAM32M_HD25;RAM32M_HD26;RAM32M_HD27;RAM32M_HD29;RAM32M_HD30;RAM32M_HD31;RAM32M_HD32;RAM32M_HD33;RAM32M_HD36;RAM32M_UNIQ_BASE_;RAM32X1D_HD28;RAM32X1D_HD34;RAM32X1D_HD35;RAM32X1D_UNIQ_BASE_;RegisterFile;glbl,,,,,,,,
+C:/Users/Frank Andes/Documents/VScode_VHDL/DSD2-Lab3/DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd,1677699523,vhdl2008,,,,instructiondecodetb,,,,,,,,

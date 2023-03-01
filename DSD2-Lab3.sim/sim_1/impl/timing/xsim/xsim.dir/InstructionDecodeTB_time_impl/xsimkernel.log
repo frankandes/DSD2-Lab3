@@ -1,0 +1,4 @@
+Running: xsim.dir/InstructionDecodeTB_time_impl/xsimk.exe -simmode gui -wdb InstructionDecodeTB_time_impl.wdb -simrunnum 0 -socket 60822
+Design successfully loaded
+Design Loading Memory Usage: 12320 KB (Peak: 12320 KB)
+Design Loading CPU Usage: 0 ms

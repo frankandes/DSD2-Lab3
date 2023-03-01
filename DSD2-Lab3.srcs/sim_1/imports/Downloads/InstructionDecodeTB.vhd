@@ -87,7 +87,39 @@ constant test_vector_array : test_array := (
 	RD2 => x"12121212",
 	RtDest => "00001",
 	RdDest => "00000",
-	ImmOut => x"0000000d")
+	ImmOut => x"0000000d"),
+-- SLL R1, R1, R2 - 00000000001000010001000000000000
+	(Instruction => x"00411000",
+	RegWriteAddr => "00010",
+	RegWriteData => x"00000001",
+	RegWriteEn => '1',
+	RegWrite => '1',
+	MemtoReg => '0',
+	MemWrite => '0',
+	ALUControl => "1100",
+	ALUSrc => '0',
+	RegDst => '1',
+	RD1 => x"00000001",
+	RD2 => x"12121212",
+	RtDest => "00001",
+	RdDest => "00010",
+	ImmOut => x"00001000"),
+-- SW R17, R4, R8 - 10101100100010001000100000000000
+	(Instruction => x"ac888800",
+	RegWriteAddr => "00000",
+	RegWriteData => x"00000000",
+	RegWriteEn => '0',
+	RegWrite => '0',
+	MemtoReg => '0',
+	MemWrite => '1',
+	ALUControl => "0000",
+	ALUSrc => '1',
+	RegDst => '0',
+	RD1 => x"00000000",
+	RD2 => x"00000000",
+	RtDest => "01000",
+	RdDest => "10001",
+	ImmOut => x"ffff8800")
 );
 
 component InstructionDecode is
@@ -181,7 +213,7 @@ end process;
 stim_proc:process
 begin
 	wait until clk='0';
-	for i in 0 to 2 loop --TODO: update to number of test vectors
+	for i in 0 to 4 loop --TODO: update to number of test vectors
 		wait until clk='1';
 		Instruction <= test_vector_array(i).Instruction;
 		RegWriteAddr <= test_vector_array(i).RegWriteAddr;

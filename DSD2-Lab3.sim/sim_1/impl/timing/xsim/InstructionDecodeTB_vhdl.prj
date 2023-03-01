@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../../DSD2-Lab3.srcs/sim_1/imports/Downloads/InstructionDecodeTB.vhd" \
+
+# Do not sort compile order
+nosort
